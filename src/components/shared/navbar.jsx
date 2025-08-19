@@ -4,6 +4,7 @@ import { languageData, navData } from '@/data/navdata';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import DropDown from './dropdown';
+import Container from './container';
 
 export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -13,8 +14,10 @@ export function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200 px-4 py-3">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="w-full px-4 py-3">
+      <Container>
+
+ <div className=" flex items-center justify-between">
         {/* Logo */}
         <Link href={'/'} className="flex items-center gap-2">
           <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
@@ -85,6 +88,9 @@ export function Navbar() {
         </div>
         {/* CTA */}
       </div>
+
+      </Container>
+     
 
       {/* Close dropdown on backdrop click */}
       {openDropdown && <div className="fixed inset-0 z-40" onClick={() => setOpenDropdown(null)} />}

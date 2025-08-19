@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ListProperty = () => {
-    return (
- <div className="px-2">
-       {/* hero */}
+  return (
+    <div className="px-2">
+      {/* hero */}
       <div className="bg-gradient-to-b from-slate-900 via-blue-900 to-blue-600 py-16 sm:py-20 md:py-28 rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-white tracking-tight">
@@ -11,7 +11,7 @@ const ListProperty = () => {
           </h1>
         </div>
       </div>
-     {/* actions */}
+      {/* actions */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 bg-white my-12 sm:my-16 md:my-20 rounded-2xl shadow-sm">
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-gray-900 mb-4 leading-tight">
@@ -51,7 +51,7 @@ const ListProperty = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default ListProperty;

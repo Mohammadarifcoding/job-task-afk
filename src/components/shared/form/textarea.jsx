@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from "react"
 
-export const Input = forwardRef(({ label, error, className = "", ...props }, ref) => {
+const Textarea = forwardRef(({ label, error, className = "", ...props }, ref) => {
   return (
     <div className="space-y-2">
       {label && (
@@ -9,9 +9,9 @@ export const Input = forwardRef(({ label, error, className = "", ...props }, ref
           {props.required && <span className="text-red-500 ml-1">*</span>}
         </label>
       )}
-      <input
+      <textarea
         ref={ref}
-        className={`w-full px-4 py-3 border  bg-gray-100 border-gray-300  rounded-md  placeholder-gray-500 focus:outline-none   ${
+        className={`w-full px-4 py-3 border  bg-gray-100 border-gray-300  rounded-md  placeholder-gray-500 focus:outline-none resize-vertical min-h-[100px] ${
           error ? "border-red-500" : ""
         } ${className}`}
         {...props}
@@ -21,5 +21,4 @@ export const Input = forwardRef(({ label, error, className = "", ...props }, ref
   )
 })
 
-
-export default Input;
+export default Textarea

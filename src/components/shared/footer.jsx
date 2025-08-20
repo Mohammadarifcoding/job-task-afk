@@ -50,12 +50,12 @@ const Footer = () => {
                 From Listing to Living — Smarter with Arambo.
               </p>
             </div>
-            {footerData.map((section) => (
-              <div>
+            {footerData.map((section,idx) => (
+              <div key={idx}>
                 <h4 className="font-semibold mb-3 ">{section.title}</h4>
                 <ul className="flex flex-col gap-2 text-sm">
                   {section.links.map((link) => (
-                    <Link href={link.href} className="text-gray-700">
+                    <Link key={link.href} href={link.href} className="text-gray-700">
                       <li>{link.label}</li>
                     </Link>
                   ))}

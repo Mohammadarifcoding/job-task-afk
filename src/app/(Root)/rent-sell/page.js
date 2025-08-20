@@ -1,7 +1,12 @@
+import RentSellFrom from '@/components/pages/RentSell/RentSellFrom';
 import React from 'react';
 
-const RentSellForm = () => {
-  return <Wrapper></Wrapper>;
+const RentSell = () => {
+  return (
+    <div>
+      <RentSellFrom />
+    </div>
+  );
 };
 
-export default RentSellForm;
+export default RentSell;

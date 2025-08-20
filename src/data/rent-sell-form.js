@@ -1,9 +1,6 @@
 export const propertyTypeOptions = [
   { value: 'apartment', label: 'Apartment' },
   { value: 'house', label: 'House' },
-  { value: 'villa', label: 'Villa' },
-  { value: 'commercial', label: 'Commercial' },
-  { value: 'land', label: 'Land' },
 ];
 
 export const furnishingOptions = [

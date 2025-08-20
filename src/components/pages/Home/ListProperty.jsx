@@ -20,7 +20,7 @@ const ListProperty = () => {
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2">
           {/* Rent Card */}
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 text-center transition-all">
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 text-center transition-all flex  flex-col justify-center items-center">
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
               Rent Out a Property
             </h3>
@@ -37,7 +37,7 @@ Rent Property <MoveRight/>
           </div>
 
           {/* Sell Card */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 text-center  transition-all">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 text-center  transition-all flex  flex-col justify-center items-center">
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
               Sell a Property
             </h3>

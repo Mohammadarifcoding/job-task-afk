@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import DropDown from './dropdown';
 import Container from './container';
 import Logo from './logo';
+import Button from './button';
 
 export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -75,10 +76,10 @@ export function Navbar() {
                 </div>
               )}
             </div>
+                        <Button className="py-3">
 
-            <button className="bg-blue-600 hover:bg-blue-700 text-white sm:tex-base text-sm sm:px-6 px-4 py-2 rounded-sm  font- transition-colors">
-              List Property
-            </button>
+                            List Property
+                        </Button>
           </div>
           {/* CTA */}
         </div>

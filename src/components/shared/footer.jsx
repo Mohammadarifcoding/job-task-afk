@@ -4,10 +4,12 @@ import { Mail, Phone } from 'lucide-react';
 import Logo from './logo';
 import { footerData } from '@/data/footerData';
 import Link from 'next/link';
+import Container from './container';
 
 const Footer = () => {
   return (
     <div className="px-4">
+
       <footer className="relative mt-16 pb-20 rounded-2xl overflow-hidden px-4">
         {/* Background Image */}
         <img
@@ -41,7 +43,9 @@ const Footer = () => {
         </div>
 
         {/* Footer links */}
-        <div className="relative z-10 bg-white rounded-2xl mx-4 md:mx-12 lg:mx-20 shadow-md -mb-6 ">
+              <Container>
+
+         <div className="relative z-10 bg-white rounded-2xl shadow-md -mb-6 ">
           <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 p-10 text-black">
             {/* Logo + tagline */}
             <div className="flex flex-col gap-2  md:col-span-2 col-span-1">
@@ -64,6 +68,8 @@ const Footer = () => {
             ))}
           </div>
         </div>
+      </Container>
+       
       </footer>
       {/* Copyright */}
       <div className="relative  text-center text-black font-bold text-sm py-10 ">

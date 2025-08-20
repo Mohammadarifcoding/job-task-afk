@@ -13,6 +13,8 @@ import { Controller, useForm } from 'react-hook-form';
 import ContactInfo from './formParts/contactInfo';
 import PropertyInfo from './formParts/propertyInfo';
 import MoreInformation from './formParts/moreinformation';
+import { MoveRight } from 'lucide-react';
+import Button from '@/components/shared/button';
 
 const RentSellFrom = () => {
 
@@ -41,6 +43,15 @@ const RentSellFrom = () => {
 
 <PropertyInfo  register={register} errors={errors} control={control}/> 
       <MoreInformation  register={register} errors={errors} control={control}/>
+
+
+
+       <div className="flex sm:items-center  justify-start gap-3 sm:flex-row flex-col pt-6">
+          <Button type="submit">
+            Submit <MoveRight />
+          </Button>
+          <p className="text-sm text-gray-500">You'll receive a confirmation call shortly</p>
+        </div>
 </form>
 
         </Wrapper>

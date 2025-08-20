@@ -1,11 +1,12 @@
+import Button from '@/components/shared/button';
 import Wrapper from '@/components/shared/wrapper';
+import { MoveRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
 const ListProperty = () => {
   return (
     <div className="px-2">
-      {/* hero */}
       {/* actions */}
       <Wrapper>
         <div className="text-center mb-10 sm:mb-12">
@@ -27,9 +28,10 @@ const ListProperty = () => {
               For landlords who want to rent their residential or commercial space.
             </p>
             <Link href={'/rent-sell'}>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-md font-medium transition-colors text-sm sm:text-base">
-              Rent Property →
-            </button>
+
+                                    <Button>
+Rent Property <MoveRight/>
+                        </Button>
             </Link>
           
           </div>
@@ -43,9 +45,11 @@ const ListProperty = () => {
               Ideal for owners looking to sell apartments, plots, or units.
             </p>
                         <Link href={'/rent-sell'}>
-                         <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-md font-medium transition-colors text-sm sm:text-base">
-              Sell Property →
-            </button>
+                        <Button>
+
+                          Sell Property <MoveRight/>
+                        </Button>
+
                         </Link>
            
           </div>
